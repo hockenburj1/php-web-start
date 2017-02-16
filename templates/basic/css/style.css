@@ -1,10 +1,25 @@
+html,
+body {
+	background-color: #333;
+}
+
+.container-fluid {
+	min-height: 100vh;
+	padding: 0;
+}
+
 #sidebar {
-	margin-top: 40px;
+	padding-top: 40px;
+	background-color: #333;
+	padding-bottom: 30px;
+	height: 100vh;
+	position: fixed;
 }
 
 #sidebar ul {
 	margin: 0;
 	padding: 0; 
+	clear: both;
 }
 
 #sidebar ul li {
@@ -16,5 +31,55 @@
 }
 
 #sidebar ul li:hover {
-	background-color: lightgray;
+	background-color: #337ab7;
+}
+
+#sidebar a {
+	padding-left: 10px;
+	color: white;
+}
+
+.active-menu-item {
+	background-color: #337ab7;
+	color: white;
+}
+
+.active-menu-item a {
+	color: white;
+}
+
+main {
+	background-color: white;
+	float: right !important;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+#sidebar-header {
+	padding-bottom: 20px;
+}
+
+#sidebar-header-content-name {
+	font-weight: bold;
+}
+
+#sidebar-header-content-edit-profile {
+	font-size: 12px;
+}
+
+#sidebar-header p {
+	margin: 0;
+	padding: 0;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.container-fluid {
+
+	}
 }

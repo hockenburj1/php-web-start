@@ -3,16 +3,16 @@
 error_reporting(E_ALL);
 
 // Database Credentials
-define('DATABASE_HOST', 'localhost');
-define('DATABASE_USER', 'root');
-define('DATABASE_PASSWORD', '');
-define('DATABASE_DB', 'test');
+define('DATABASE_HOST', 'devimiiphone1.nku.edu');
+define('DATABASE_USER', 'Boone-St-E');
+define('DATABASE_PASSWORD', 'children123');
+define('DATABASE_DB', 'Boone-St-E');
 
 // Document Root
-define('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/custom-cms/');
+define('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/boone/');
 
 // Document Root
-define('BASE', 'http://localhost/custom-cms/');
+define('BASE', 'http://localhost/boone/');
 
 // Template
 define('TEMPLATE_NAME', 'basic');
