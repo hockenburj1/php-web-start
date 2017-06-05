@@ -3,16 +3,16 @@
 error_reporting(E_ALL);
 
 // Database Credentials
-define('DATABASE_HOST', 'devimiiphone1.nku.edu');
-define('DATABASE_USER', 'Boone-St-E');
-define('DATABASE_PASSWORD', 'children123');
-define('DATABASE_DB', 'Boone-St-E');
+define('DATABASE_HOST', 'exampleDBhost.com'); //change me
+define('DATABASE_USER', 'exampleDBuser'); //change me
+define('DATABASE_PASSWORD', 'exampleDBpassword'); //change me
+define('DATABASE_DB', 'exampleDBname'); //change me
 
 // Document Root
-define('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/boone/');
+define('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/exampleDirectory/'); //change me
 
 // Document Root
-define('BASE', 'http://localhost/boone/');
+define('BASE', 'http://localhost/exampleDirectory/'); //change me
 
 // Template
 define('TEMPLATE_NAME', 'basic');
