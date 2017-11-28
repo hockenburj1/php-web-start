@@ -23,7 +23,7 @@ Class MySQL {
          * @param String $password Database Password
          * @param String $name Database Name
          */
-	function MySQL($host, $user, $password, $name) {
+	function __construct ($host, $user, $password, $name) {
             try {
     		$this->connection = new PDO("mysql:host=$host;dbname=$name", $user, $password);
                 $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
