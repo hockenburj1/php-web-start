@@ -118,6 +118,22 @@ Class MySQL {
         static function clean($tring){
             strip_tags($tring);
         }
+
+        function prepare($sql) {
+            $preparedStatement = $this->connection->prepare($sql);
+            $this->preparedStatement = $preparedStatement;
+        }
+    
+        function queryPrepared($params = array()) {
+            try {
+                $this->preparedStatement->execute($params);
+            }
+            
+            catch (PDOException $e) {
+                print "Error!: " . $e->getMessage() . "<br/>";
+                die();
+            }
+        }
 }
 
 
